@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+    <head>
+        <title>Joao's Web Dev Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <section>
+            <h2>Navigation Menu</h2>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Home</h2>
+            <h3>Hi, I'm Joao - A Web Developer</h3>
+            <p>I trained in Full Stack Web Development at the Carnegie Mellon University TalentSprint Coding Bootcamp, where I built real-world projects using the MERN stack. While I gained experience across the full stack, I found my passion in front-end development — creating clean, responsive, and user-friendly interfaces with React. Now, I'm excited to bring that energy to a front-end web development role.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="cta-button">View My Projects</a>
+                <a href="#contact" class="cta-button">Get In Touch</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <!-- Project 1 Card -->
+    <div class="card">
+        <img src="thumb1.jpg" alt="Project 1 Thumbnail">
+        <h3>MMA Website</h3>
+        <p>Personal website to promote my MMA PT business, sell merch, and find sponsors for my fights!</p>
+        <button onclick="openModal(1)">View Details</button>
+        <a href="https://joaomartinez10.github.io/MMAWebsite/" target="_blank"><button>Visit Project</button></a>
+      </div>
+  
+      <!-- 
+      <div class="card">
+        <img src="thumb2.jpg" alt="Project 2 Thumbnail">
+        <h3>Project Two</h3>
+        <p>Short description of project two.</p>
+        <button onclick="openModal(2)">View Details</button>
+        <a href="https://project2.com" target="_blank"><button>Visit Project</button></a>
+      </div>
+  
+      
+      <div class="card">
+        <img src="thumb3.jpg" alt="Project 3 Thumbnail">
+        <h3>Project Three</h3>
+        <p>Short description of project three.</p>
+        <button onclick="openModal(3)">View Details</button>
+        <a href="https://project3.com" target="_blank"><button>Visit Project</button></a>
+      </div> -->
+  
+     
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal(1)">&times;</span>
+          <h2>MMA Website</h2>
+          <p>Built using HTML, CSS, and JavaScript.</p>
+          <div class="carousel" data-project="1">
+            <img src="img1a.jpg" class="carousel-image active">
+            <img src="img1b.jpg" class="carousel-image">
+            <img src="img1c.jpg" class="carousel-image">
+            <button class="prev" onclick="changeSlide(-1, 1)">❮</button>
+            <button class="next" onclick="changeSlide(1, 1)">❯</button>
+            <div class="indicators">
+              <span class="dot" onclick="setSlide(0, 1)"></span>
+              <span class="dot" onclick="setSlide(1, 1)"></span>
+              <span class="dot" onclick="setSlide(2, 1)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+     <!-- <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal(2)">&times;</span>
+          <h2>Project Two Details</h2>
+          <p>Detailed description of project two.</p>
+          <div class="carousel" data-project="2">
+            <img src="img2a.jpg" class="carousel-image active">
+            <img src="img2b.jpg" class="carousel-image">
+            <img src="img2c.jpg" class="carousel-image">
+            <button class="prev" onclick="changeSlide(-1, 2)">❮</button>
+            <button class="next" onclick="changeSlide(1, 2)">❯</button>
+            <div class="indicators">
+              <span class="dot" onclick="setSlide(0, 2)"></span>
+              <span class="dot" onclick="setSlide(1, 2)"></span>
+              <span class="dot" onclick="setSlide(2, 2)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal(3)">&times;</span>
+          <h2>Project Three Details</h2>
+          <p>Detailed description of project three.</p>
+          <div class="carousel" data-project="3">
+            <img src="img3a.jpg" class="carousel-image active">
+            <img src="img3b.jpg" class="carousel-image">
+            <img src="img3c.jpg" class="carousel-image">
+            <button class="prev" onclick="changeSlide(-1, 3)">❮</button>
+            <button class="next" onclick="changeSlide(1, 3)">❯</button>
+            <div class="indicators">
+              <span class="dot" onclick="setSlide(0, 3)"></span>
+              <span class="dot" onclick="setSlide(1, 3)"></span>
+              <span class="dot" onclick="setSlide(2, 3)"></span>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+
+            <h3>Front-End Development</h3>
+            <ul>
+                <li>HTML5, CSS3, JavaScript (ES6+), Responsive Design</li>
+                <li>React.js, JSX, React Hooks, Component-Based Architecture</li>
+                <li>UI/UX Principles, DOM Manipulation, Accessibility Best Practices</li>
+            </ul>
+
+            <h3>Back-End Development</h3>
+            <ul>
+                <li>Node.js, Express.js</li>
+                <li>RESTful APIs, Middleware, Server-Side Logic</li>
+            </ul>
+
+            <h3>Database & Tools</h3>
+            <ul>
+                <li>MongoDB, Mongoose</li>
+                <li>Git & GitHub, NPM, VS Code</li>
+            </ul>
+
+            <h3>Additional</h3>
+            <ul>
+                <li>Agile Collaboration, Debugging, Problem-Solving</li>
+                <li>Trained in Full Stack Web Development through the Carnegie Mellon University TalentSprint Bootcamp, with a strong focus on real-world project building using the MERN stack.</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>Phone: (000) 000 - 0000</p>
+            <p>Email: joaom@andrew.cmu.edu</p>
+        </section>
+        
+        <script src="script.js"></script>
+    </body>
+    <footer></footer>
+</hmtl>
